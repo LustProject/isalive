@@ -139,6 +139,7 @@ def start_command(parser: argparse.ArgumentParser, args: argparse.Namespace):
         parser.error("wrong configuration format!")
         parser.exit(1)
     else:
+        print('start monitoring')
         try:
             start_monitoring(
                 bot_token=bot_token,
